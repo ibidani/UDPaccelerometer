@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <EditText
+        android:id="@+id/editipaddr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="192.168.1.136" />
+    <Button
+        android:id="@+id/conbut"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editipaddr"
+        android:layout_alignParentEnd="true"
+        android:text="Connect" />
+
+    <TextView
+        android:id="@+id/msgView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conbut"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/xval"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closebut"
+         />
+
+    <TextView
+        android:id="@+id/zval"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closebut"
+        android:layout_toEndOf="@+id/yval" />
+    <TextView
+        android:id="@+id/yval"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closebut"
+        android:layout_toEndOf="@+id/xval" />
+
+    <TextView
+        android:id="@+id/magnet"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xval" />
+
+    <Button
+        android:id="@+id/quitbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_below="@+id/editipaddr"
+        android:text="quit" />
+    <Button
+        android:id="@+id/closebut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:text="Close" />
+
+
+</RelativeLayout>
